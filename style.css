@@ -359,3 +359,43 @@ button:hover{
     0 0 40px gold,
     0 0 80px deepskyblue;
 }
+footer{
+    background:#0d0d0d;
+    padding:30px;
+}
+
+.copyright{
+    color:#888;
+    font-size:12px;
+    text-align:left;
+}
+
+.developer{
+    text-align:right;
+    font-size:22px;
+    font-weight:bold;
+
+    color:#00d4ff;
+
+    text-shadow:
+    0 0 10px #00d4ff,
+    0 0 20px #00d4ff,
+    0 0 40px #4169E1;
+
+    animation:developerGlow 1.5s infinite alternate;
+}
+
+@keyframes developerGlow{
+    from{
+        text-shadow:
+        0 0 10px #00d4ff,
+        0 0 20px #4169E1;
+    }
+
+    to{
+        text-shadow:
+        0 0 20px #00d4ff,
+        0 0 40px #00d4ff,
+        0 0 60px #4169E1;
+    }
+}
