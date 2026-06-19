@@ -1,780 +1,179 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, sans-serif;
-}
+  function login(){
 
-body{
-    background:#111;
-    color:white;
-}
+    let email =
+    document.getElementById("email").value;
 
-.hero{
-    height:100vh;
-    background:url("model1.jpg");
-    background-size:cover;
-    background-position:center;
-}
+    let password =
+    document.getElementById("password").value;
 
-.overlay{
-    height:100%;
-    background:rgba(0,0,0,0.65);
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-}
+    if(
 
-.hero h1{
-    font-size:80px;
-    color:#FFD700;
+    (email==="gajanankubade12345@gmail.com"
+    &&
+    password==="74117411")
 
-    text-shadow:
-    0 0 5px #FFD700,
-    0 0 15px #FFD700,
-    0 0 30px #FF8C00,
-    0 0 45px #FF1493;
+    ||
 
-    animation:slideDown 1.5s;
-}
+    (email==="kubadegajanan12345@gmail.com"
+    &&
+    password==="sureshtailor")
 
-.hero h3{
-    margin-top:15px;
-    font-size:30px;
-}
+    ){
 
-.hero p{
-    margin-top:20px;
-    font-size:22px;
-}
+        document.getElementById("loginPage")
+        .style.display="none";
 
-button{
-    margin-top:30px;
-    padding:15px 35px;
-    border:none;
-    border-radius:30px;
-    background:gold;
-    font-size:18px;
-    cursor:pointer;
-    transition:0.4s;
-}
-
-button:hover{
-    transform:scale(1.1);
-}
-
-.services{
-    padding:80px 40px;
-    display:flex;
-    justify-content:center;
-    gap:30px;
-    flex-wrap:wrap;
-}
-
-.card{
-    background:#222;
-    width:280px;
-    padding:30px;
-    border-radius:20px;
-    text-align:center;
-    box-shadow:0 0 20px rgba(255,215,0,0.3);
-    transition:0.4s;
-}
-
-.card:hover{
-    transform:translateY(-10px);
-}
-
-.gallery{
-    padding:80px 40px;
-    text-align:center;
-}
-
-.gallery h2{
-    color:gold;
-    margin-bottom:40px;
-    font-size:40px;
-}
-
-.gallery-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
-}
-
-.gallery-grid img{
-    width:100%;
-    height:350px;
-    object-fit:cover;
-    border-radius:20px;
-    transition:0.5s;
-}
-
-.gallery-grid img:hover{
-    transform:scale(1.05);
-}
-
-.about{
-    padding:80px 30px;
-    text-align:center;
-    background:#1a1a1a;
-}
-
-.about h2{
-    color:gold;
-    margin-bottom:20px;
-    font-size:40px;
-}
-
-.about p{
-   .about p{
-    max-width:1000px;
-    margin:auto;
-    line-height:2;
-    font-size:20px;
-    text-align:justify;
-    padding:20px;
-}
-}
-
-.contact{
-    padding:80px 30px;
-    text-align:center;
-}
-
-.contact h2{
-    color:gold;
-    margin-bottom:20px;
-    font-size:40px;
-}
-
-.contact h2{
-    color:gold;
-    margin-bottom:20px;
-    font-size:55px;
-    transition:0.4s;
-    display:inline-block;
-    padding:15px 30px;
-    border-radius:20px;
-}
-
-@keyframes slideDown{
-    from{
-        opacity:0;
-        transform:translateY(-100px);
-    }
-
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
-}
-.contact iframe{
-    max-width:1000px;
-    margin-top:30px;
-    box-shadow:0 0 20px rgba(255,215,0,0.3);
-}
-.highlights{
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-    gap:20px;
-    margin-top:30px;
-}
-
-.highlight-box{
-    background:#222;
-    padding:20px;
-    border-radius:15px;
-    box-shadow:0 0 15px rgba(255,215,0,0.3);
-    font-weight:bold;
-    transition:0.3s;
-}
-
-.highlight-box:hover{
-    transform:translateY(-5px);
-}
-
-.whatsapp-float{
-    position:fixed;
-    bottom:25px;
-    right:25px;
-
-    width:70px;
-    height:70px;
-
-    background:#25D366;
-    color:white;
-
-    border-radius:50%;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    text-decoration:none;
-
-    font-size:35px;
-
-    box-shadow:0 0 20px rgba(37,211,102,0.7);
-
-    z-index:9999;
-
-    transition:0.3s;
-}
-
-.whatsapp-float:hover{
-    transform:scale(1.15);
-}.tagline{
-    color:gold;
-    font-size:22px;
-    margin-top:10px;
-    margin-bottom:10px;
-}
-.about{
-    padding:100px 40px;
-    background:#161616;
-    text-align:center;
-}
-
-.about h2{
-    color:gold;
-    font-size:50px;
-    margin-bottom:60px;
-}
-
-.about-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:30px;
-}
-
-.about-card{
-    background:#222;
-    padding:30px;
-    border-radius:20px;
-    box-shadow:0 0 20px rgba(255,215,0,0.2);
-    transition:0.4s;
-}
-
-.about-card:hover{
-    transform:translateY(-10px);
-    box-shadow:0 0 30px gold;
-}
-
-.about-card h3{
-    color:gold;
-    margin-bottom:15px;
-}
-
-.about-card p{
-    line-height:1.8;
-}
-.stats{
-    display:flex;
-    justify-content:center;
-    gap:30px;
-    flex-wrap:wrap;
-    padding:100px 40px;
-    background:black;
-}
-
-.stat{
-    background:#1c1c1c;
-    width:260px;
-    padding:35px;
-    border-radius:20px;
-    text-align:center;
-    box-shadow:0 0 20px rgba(255,215,0,0.2);
-    transition:0.4s;
-}
-
-.stat:hover{
-    transform:translateY(-10px);
-    box-shadow:0 0 30px gold;
-}
-
-.stat h1{
-    font-size:60px;
-    margin-bottom:15px;
-}
-
-.stat p{
-    font-size:20px;
-}
-.collection{
-    padding:80px 0;
-    text-align:center;
-    background:#111;
-}
-
-.collection h2{
-    color:gold;
-    font-size:45px;
-    margin-bottom:30px;
-}
-
-.collection img{
-    width:100%;
-    max-height:600px;
-    object-fit:cover;
-    display:block;
-}
-.about h2,
-.reviews h2,
-.featured h2,
-.contact h2,
-.collection h2{
-
-    display:inline-block;
-
-    padding:15px 35px;
-
-    border-radius:20px;
-
-    color:gold;
-
-    background:rgba(255,215,0,0.05);
-
-    box-shadow:
-    0 0 10px rgba(255,215,0,0.3),
-    0 0 20px rgba(0,191,255,0.15);
-
-    transition:0.4s ease;
-}
-.about h2:hover,
-.reviews h2:hover,
-.featured h2:hover,
-.contact h2:hover,
-.collection h2:hover{
-
-    color:white;
-
-    transform:translateY(-5px) scale(1.05);
-
-    box-shadow:
-    0 0 20px gold,
-    0 0 40px gold,
-    0 0 80px deepskyblue;
-}
-footer{
-    background:#0d0d0d;
-    padding:30px;
-}
-
-.copyright{
-    color:#888;
-    font-size:12px;
-    text-align:left;
-}
-
-.developer{
-    text-align:right;
-    font-size:22px;
-    font-weight:bold;
-
-    color:#00d4ff;
-
-    text-shadow:
-    0 0 10px #00d4ff,
-    0 0 20px #00d4ff,
-    0 0 40px #4169E1;
-
-    animation:developerGlow 1.5s infinite alternate;
-}
-
-@keyframes developerGlow{
-    from{
-        text-shadow:
-        0 0 10px #00d4ff,
-        0 0 20px #4169E1;
-    }
-
-    to{
-        text-shadow:
-        0 0 20px #2cafc9,
-        0 0 40px #00d4ff,
-        0 0 60px #4169E1;
-    }
-}
-.staff-login-btn{
-
-    position:fixed;
-
-    top:20px;
-
-    left:20px;
-
-    background:black;
-
-    color:white;
-
-    text-decoration:none;
-
-    padding:12px 20px;
-
-    border:2px solid white;
-
-    border-radius:10px;
-
-    font-weight:bold;
-
-    transition:0.3s;
-
-    z-index:9999;
-}
-
-.staff-login-btn:hover{
-
-    background:white;
-
-    color:black;
-
-    transform:scale(1.05);
-
-}.login-container{
-
-    width:400px;
-
-    margin:100px auto;
-
-    padding:40px;
-
-    background:#1a1a1a;
-
-    border-radius:20px;
-
-    text-align:center;
-
-    box-shadow:0 0 20px rgba(255,255,255,0.1);
-
-}
-
-.login-container h1{
-
-    margin-bottom:30px;
-
-    color:white;
-
-}
-
-.login-container input{
-
-    width:100%;
-
-    padding:15px;
-
-    margin:10px 0;
-
-    border:none;
-
-    border-radius:10px;
-
-    background:#333;
-
-    color:white;
-
-}
-
-.login-container button{
-
-    width:100%;
-
-    padding:15px;
-
-    margin-top:20px;
-
-    background:white;
-
-    color:black;
-
-    border:none;
-
-    border-radius:10px;
-
-    font-weight:bold;
-
-    cursor:pointer;
-
-    transition:0.3s;
-    box-shadow:
-    0 0 10px #00d4ff,
-    0 0 20px #4169E1;
-
-}
-
-.login-container{
-
-    width:420px;
-
-    margin:80px auto;
-
-    padding:40px;
-
-    background:linear-gradient(
-        135deg,
-        #111111,
-        #1f1f1f
-    );
-
-    border-radius:25px;
-
-    text-align:center;
-
-    border:2px solid #00d4ff;
-
-    box-shadow:
-    0 0 20px rgba(0,212,255,0.3),
-    0 0 40px rgba(0,212,255,0.2);
-
-    animation:fadeUp 1s;
-    animation:fadeUp 1s ease;
-}
-.dashboard{
-
-    padding:50px;
-
-    text-align:center;
-
-    animation:fadeIn 1s;
-}
-
-.dashboard h1{
-
-    color:white;
-
-    margin-bottom:20px;
-}
-
-.dashboard h3{
-
-    color:#ccc;
-}
-.login-subtitle{
-
-    color:#00d4ff;
-
-    font-size:16px;
-
-    margin-bottom:25px;
-
-    letter-spacing:1px;
-
-    text-shadow:
-    0 0 5px #00d4ff,
-    0 0 10px #4169E1;
-
-}
-
-@keyframes fadeUp{
-
-    from{
-
-        opacity:0;
-
-        transform:translateY(40px);
+        document.getElementById("dashboard")
+        .style.display="block";
 
     }
 
-    to{
+    else{
 
-        opacity:1;
-
-        transform:translateY(0);
+        alert("Invalid Email or Password");
 
     }
 
 }
-.customer-form{
+function saveCustomer(){
 
-    width:80%;
+    let data = {
 
-    max-width:700px;
+        workerName: document.getElementById("workerName").value,
+        customerId: document.getElementById("customerId").value,
+        customerName: document.getElementById("customerName").value,
+        phoneNumber: document.getElementById("phoneNumber").value,
+        pickupDate: document.getElementById("pickupDate").value,
+        deliveryDate: document.getElementById("deliveryDate").value,
+        dressType: document.getElementById("dressType").value,
+        totalAmount: document.getElementById("totalAmount").value,
+        paymentStatus: document.getElementById("paymentStatus").value,
+        orderStatus: document.getElementById("orderStatus").value,
+        notes: document.getElementById("notes").value
 
-    margin:30px auto;
+    };
 
-    display:flex;
+    fetch("https://script.google.com/macros/s/AKfycbwslcbI01uXFmhKvYsUzpxjE_Y-r_Q8TnpZjTfxo-IRpllWvgOtfMM_AlgZh2-TkYJlww/exec", {
 
-    flex-direction:column;
+        method: "POST",
 
-    gap:15px;
-}
+        body: JSON.stringify(data)
 
-.customer-form input,
-.customer-form select,
-.customer-form textarea{
+    })
 
-    padding:15px;
+    .then(response => response.text())
 
-    border:none;
+    .then(result => {
 
-    border-radius:12px;
+        alert("Customer Saved Successfully ✅");
 
-    background:#2a2a2a;
+        clearForm();
 
-    color:white;
+    })
 
-    font-size:15px;
-}
+    .catch(error => {
 
-.customer-form textarea{
+        alert("Error Saving Data ❌");
 
-    min-height:100px;
-}
+        console.log(error);
 
-.customer-form button{
-
-    padding:15px;
-
-    border:none;
-
-    border-radius:12px;
-
-    font-weight:bold;
-
-    cursor:pointer;
-
-    background:linear-gradient(
-        90deg,
-        #00d4ff,
-        #4169E1
-    );
-
-    color:white;
-
-    transition:0.3s;
-}
-
-.customer-form button:hover{
-
-    transform:translateY(-3px);
-
-    box-shadow:
-    0 0 15px #00d4ff,
-    0 0 30px #4169E1;
-}
-.dashboard-header{
-
-    text-align:center;
-
-    margin-bottom:30px;
-
-    animation:fadeUp 1s ease;
-}
-
-.dashboard-header h1{
-
-    font-size:42px;
-
-    font-weight:bold;
-
-    background:linear-gradient(
-        90deg,
-        gold,
-        #00d4ff
-    );
-
-    -webkit-background-clip:text;
-
-    -webkit-text-fill-color:transparent;
-
-    margin-bottom:10px;
-
-    text-shadow:
-    0 0 10px rgba(255,215,0,0.4),
-    0 0 20px rgba(0,212,255,0.4);
-}
-
-.dashboard-header p{
-
-    color:#cccccc;
-
-    font-size:18px;
-
-    letter-spacing:2px;
-}
-.customer-form input,
-.customer-form select,
-.customer-form textarea{
-
-    transition:0.3s;
-}
-
-.customer-form input:focus,
-.customer-form select:focus,
-.customer-form textarea:focus{
-
-    transform:scale(1.02);
-
-    box-shadow:
-    0 0 10px #00d4ff;
-
-    border:1px solid #00d4ff;
-}
-.stats-container{
-
-    display:flex;
-
-    justify-content:center;
-
-    gap:20px;
-
-    flex-wrap:wrap;
-
-    margin-bottom:30px;
+    });
 
 }
 
-.stat-card{
+function clearForm(){
 
-    width:220px;
-
-    background:#1f1f1f;
-
-    border-radius:20px;
-
-    padding:20px;
-
-    text-align:center;
-
-    border:1px solid #333;
-
-    transition:0.3s;
-
-    animation:fadeUp 1s ease;
-}
-
-.stat-card:hover{
-
-    transform:translateY(-5px);
-
-    box-shadow:
-    0 0 15px #00d4ff,
-    0 0 30px rgba(0,212,255,0.3);
+    document.getElementById("workerName").value="";
+    document.getElementById("customerId").value="";
+    document.getElementById("customerName").value="";
+    document.getElementById("phoneNumber").value="";
+    document.getElementById("pickupDate").value="";
+    document.getElementById("deliveryDate").value="";
+    document.getElementById("dressType").value="";
+    document.getElementById("totalAmount").value="";
+    document.getElementById("notes").value="";
 
 }
+async function downloadBill(){
 
-.stat-card h2{
+    const { jsPDF } = window.jspdf;
 
-    font-size:35px;
+    const doc = new jsPDF();
 
-    margin-bottom:10px;
-}
+    doc.rect(10, 10, 190, 277);
 
-.stat-card h3{
+    let customerId =
+    document.getElementById("customerId").value;
 
-    color:white;
+    let customerName =
+    document.getElementById("customerName").value;
 
-    margin-bottom:10px;
-}
+    let phoneNumber =
+    document.getElementById("phoneNumber").value;
 
-.stat-card p{
+    let dressType =
+    document.getElementById("dressType").value;
 
-    color:#00d4ff;
+    let totalAmount =
+    document.getElementById("totalAmount").value;
 
-    font-size:24px;
+    let deliveryDate =
+    document.getElementById("deliveryDate").value;
 
-    font-weight:bold;
+    doc.setFontSize(20);
+
+    doc.text("SURESH TAILOR", 20, 20);
+
+    doc.setFontSize(12);
+
+    doc.text("Ladies  Specialist", 20, 28);
+
+    doc.text(" 4.8 Customer Rating", 20, 36);
+
+    doc.text(" 35+ Years Experience", 20, 44);
+
+    doc.text(" 7000+ Happy Customers", 20, 52);
+
+    doc.setFontSize(11);
+
+    doc.text("Near Savita Hotel, Karwar", 20, 62);
+
+    doc.text("Phone: 9845280524", 20, 70);
+
+    doc.line(20, 80, 190, 80);
+
+    doc.text("Customer ID: " + customerId, 20, 95);
+
+    doc.text("Customer Name: " + customerName, 20, 105);
+
+    doc.text("Phone Number: " + phoneNumber, 20, 115);
+
+    doc.text("Dress Type: " + dressType, 20, 125);
+
+    doc.text("Delivery Date: " + deliveryDate, 20, 135);
+
+    doc.setFontSize(18);
+
+    doc.text("TOTAL AMOUNT", 20, 155);
+
+    doc.setFontSize(24);
+
+    doc.text("Rs. " + totalAmount, 20, 170);
+
+    doc.line(20, 130, 190, 130);
+
+    doc.setFontSize(12);
+
+    doc.text("Thank You For Visiting", 20, 200);
+
+    doc.text("Your Satisfaction Is Our Priority", 20, 210);
+
+    doc.line(120, 230, 190, 230);
+
+    doc.text("Authorized Signature", 130, 240);
+
+    doc.text("Suresh Tailor", 140, 248);
+
+    doc.save("Bill_" + customerId + ".pdf");
+
 }
